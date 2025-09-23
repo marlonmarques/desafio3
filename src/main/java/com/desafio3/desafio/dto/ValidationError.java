@@ -1,4 +1,4 @@
-package com.desafio3.dto;
+package com.desafio3.desafio.dto;
 
 public class ValidationError {
 

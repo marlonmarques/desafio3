@@ -1,10 +1,10 @@
-package com.desafio3.dto;
+package com.desafio3.desafio.dto;
 
 import java.time.LocalDate;
 
 import jakarta.validation.constraints.*;
 
-public class ClienteDTO {
+public class ClientDTO {
 
     private Long id;
     @NotBlank(message = "Campo requerido")
@@ -15,11 +15,11 @@ public class ClienteDTO {
     private Integer children;
 
 
-    public ClienteDTO() {
+    public ClientDTO() {
     }
 
 
-    public ClienteDTO(Long id, String name, String cpf, Double income, LocalDate birthDate, Integer children) {
+    public ClientDTO(Long id, String name, String cpf, Double income, LocalDate birthDate, Integer children) {
         this.id = id;
         this.name = name;
         this.cpf = cpf;

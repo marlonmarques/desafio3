@@ -1,4 +1,4 @@
-package com.desafio3.entities;
+package com.desafio3.desafio.entities;
 
 import java.time.LocalDate;
 
@@ -10,7 +10,7 @@ import jakarta.persistence.Table;
 
 @Entity
 @Table(name = "tb_cliente")
-public class Cliente {
+public class Client {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -22,11 +22,11 @@ public class Cliente {
     private Integer children;
 
 
-    public Cliente() {
+    public Client() {
     }
 
 
-    public Cliente(Long id, String name, String cpf, Double income, LocalDate birthDate, Integer children) {
+    public Client(Long id, String name, String cpf, Double income, LocalDate birthDate, Integer children) {
         this.id = id;
         this.name = name;
         this.cpf = cpf;
