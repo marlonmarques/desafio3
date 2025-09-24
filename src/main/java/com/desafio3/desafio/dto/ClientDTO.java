@@ -11,9 +11,17 @@ public class ClientDTO {
     private Long id;
     @NotBlank(message = "Campo requerido")
     private String name;
+    @NotBlank(message = "Campo requerido")
+    @Size(min = 11, max = 14, message = "CPF deve ter entre 11 e 14 caracteres")
     private String cpf;
+    @NotNull(message = "Campo requerido")
+    @Positive(message = "O salário deve ser um valor positivo")
     private Double income;
+    @NotNull(message = "Campo requerido")
+    @PastOrPresent(message = "A data de nascimento deve ser no passado ou presente")
     private LocalDate birthDate;
+    @NotNull(message = "Campo requerido")
+    @Min(value = 0, message = "O número de filhos deve ser um valor positivo")
     private Integer children;
 
 
